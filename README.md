@@ -1,6 +1,6 @@
 # **Speach emotion recognition** 
  
-![image3](https://github.com/vburlay/anw_feld_ba/raw/main/images/model.PNG ) 
+![image1](https://github.com/vburlay/ser_str/raw/master/image/ser.PNG) 
 
 ## Table of Contents
 * [Genelal Info](#general-nformation)
@@ -16,6 +16,7 @@
 
 ## General Information
 
+Speach emotion recognition
 
 ## Technologies Used
 - Python - version 3.8.0
@@ -23,23 +24,32 @@
 
 
 ## Features
-- Deep Learning (ResNet34)
+- Deep Learning (Pytorch & Keras - ResNet34)
+- Librosa(.wav -> .png)
 
 ## Screenshots
+###Spectogram (.wav -> .png)
+
+![image2](https://github.com/vburlay/ser_str/raw/master/image/spectogram.PNG)
 
 | Architecture     | Accuracy of Training data | Accuracy of Test data |
 |------------------|:-------------------------:|----------------------:|
-| Pytorch ResNet34 |           0,94            |                  0,94 |
+| Pytorch ResNet34 |           0,98            |                  0,94 |
 | Keras ResNet34   |           0,98            |                  0,84 |
 
 
-* **CNN (Architecture)**
+* **ResNet23 (Keras)**
 
-![image3](https://github.com/vburlay/anw_feld_ba/raw/main/images/model.PNG ) 
+![image3](https://github.com/vburlay/ser_str/raw/master/image/model.PNG ) 
+
+* **Learning rate**
+
+![image4](https://github.com/vburlay/ser_str/raw/master/image/lernrate.PNG ) 
+
 
 * **CNN (Evaluation)**
 
-![image4](https://github.com/vburlay/anw_feld_ba/raw/main/images/evaluation.PNG ) 
+![image5](https://github.com/vburlay/ser_str/raw/master/image/matrix.PNG ) 
 
 
 ## Setup
@@ -72,7 +82,7 @@ from sklearn.model_selection import train_test_split
 
 
 ## Usage
-The result 0.94
+The result 0.94 (Pytorch)
 ```r
     spec_resnet = models.resnet34(pretrained=True)
 
