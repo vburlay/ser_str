@@ -1,6 +1,6 @@
 # **Speach emotion recognition** 
  
-> A study of the customer database for the purpose of finding and analyzing the potential customers
+![image3](https://github.com/vburlay/anw_feld_ba/raw/main/images/model.PNG ) 
 
 ## Table of Contents
 * [Genelal Info](#general-nformation)
@@ -23,13 +23,14 @@
 
 
 ## Features
-- Deep Learning (CNN)
+- Deep Learning (ResNet34)
 
 ## Screenshots
 
-| Architecture    |Accuracy of Training data   |Accuracy of Test data  |
-|-----------|:-----:| -----:|
-|Convolutional neural network (CNN) |  0,94     |   0,94    |
+| Architecture     | Accuracy of Training data | Accuracy of Test data |
+|------------------|:-------------------------:|----------------------:|
+| Pytorch ResNet34 |           0,94            |                  0,94 |
+| Keras ResNet34   |           0,98            |                  0,84 |
 
 
 * **CNN (Architecture)**
@@ -44,51 +45,44 @@
 ## Setup
 You can install the package as follows:
 ```r
-import pandas as pd
-import numpy as np
-import os
-import sklearn as sk
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import torch.optim as optim
 import matplotlib.pyplot as plt
-import seaborn as sns
-import matplotlib.colors as mc
-from mpl_toolkits.mplot3d import Axes3D
-%matplotlib inline
-np.random.seed(42)
-plt.rc('axes', labelsize=14)
-plt.rc('xtick', labelsize=12)
-plt.rc('ytick', labelsize=12)
-from sklearn.pipeline import Pipeline
-from sklearn.metrics import roc_curve
-from sklearn.cluster import KMeans
-from sklearn.linear_model import LogisticRegression
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.svm import SVC
-from sklearn.metrics import accuracy_score,classification_report, confusion_matrix
-from sklearn.utils.multiclass import unique_labels
-from sklearn.model_selection import  cross_val_score,cross_val_predict
-#CNN
-from keras.models import Sequential
-import keras
-from keras.layers import Dense
-from keras.layers import Input, Flatten, Dropout, Activation
-from keras.layers import Conv1D, MaxPooling1D, AveragePooling1D
-from keras.layers import Conv2D, MaxPooling2D, GlobalAveragePooling2D,SpatialDropout1D
-from keras.models import Model
+import IPython.display as display
+import numpy as np
+import random
+import librosa
+import librosa.display
+import tensorflow as tf
+import torchvision
+from torchvision import models, transforms
+from pathlib import Path
+from PIL import Image
+from torch.utils.data import Dataset, DataLoader, TensorDataset
+from sklearn.metrics import classification_report,confusion_matrix
+import itertools
+from sklearn.model_selection import StratifiedKFold
+from google.colab import drive
+import os
+from torch.utils.tensorboard import SummaryWriter
+from sklearn.model_selection import train_test_split
 ```
 
 
 ## Usage
-The result 0.94025 - 94 % is good but with preprocessing by clustering the accuracy can be improved. Clustering (K-Means) can be an efficient approach for dimensionality reduction but for this a pipeline has to be created that divides the training data into clusters 34 and replaces the data by their distances to this cluster 34 to apply a logistic regression model afterwards:
+The result 0.94
 ```r
-pipeline = Pipeline([
-    ("kmeans", KMeans(n_clusters = d)),
-    ("log_reg", LogisticRegression(multi_class = 'ovr',
-             class_weight = None, 
-             solver= 'saga', 
-             max_iter = 10000)),
-])
+    spec_resnet = models.resnet34(pretrained=True)
+
+    for param in spec_resnet.parameters():
+        param.requires_grad = False
+
+        spec_resnet.fc = nn.Sequential(nn.Linear(spec_resnet.fc.in_features,500),
+                               nn.ReLU(),
+                               nn.Dropout(), nn.Linear(500,6))
+        return spec_resnet
 ```
 
 
