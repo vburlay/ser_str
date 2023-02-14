@@ -82,7 +82,7 @@ from sklearn.model_selection import train_test_split
 
 
 ## Usage
-The result 0.94 (Pytorch)
+The result 0.94 (Pytorch) but ResNet50 is better 
 ```r
     spec_resnet = models.resnet34(pretrained=True)
 
