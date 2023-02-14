@@ -28,7 +28,7 @@ Speach emotion recognition
 - Librosa(.wav -> .png)
 
 ## Screenshots
-###Spectogram (.wav -> .png)
+### Spectogram (.wav -> .png)
 
 ![image2](https://github.com/vburlay/ser_str/raw/master/image/spectogram.PNG)
 
