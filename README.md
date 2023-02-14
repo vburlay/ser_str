@@ -47,7 +47,7 @@ Speach emotion recognition
 ![image4](https://github.com/vburlay/ser_str/raw/master/image/lernrate.PNG ) 
 
 
-* **CNN (Evaluation)**
+* **Pytorch Resnet34 (Evaluation)**
 
 ![image5](https://github.com/vburlay/ser_str/raw/master/image/matrix.PNG ) 
 
