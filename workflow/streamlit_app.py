@@ -119,8 +119,7 @@ if add_selectbox  == "Application start" and add_radio == "Pytorch (ResNet34)":
 
 elif add_selectbox == "Show the source code" and  add_radio == "Pytorch (ResNet34)":
     readme_text = st.markdown(get_file_content_as_string("streamlit.md"))
-    readme_text.empty()
-    readme_text = st.markdown(get_file_content_as_string("streamlit_app.py"))
+#    readme_text = st.markdown(get_file_content_as_string("streamlit_app.py"))
 else:
     st.title("Keras (ResNet34) is not jet included")
 
