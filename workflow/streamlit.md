@@ -1,4 +1,4 @@
-# **Speach emotion recognition** 
+# **Speach remotion recognition** 
  
 ```r
 """
