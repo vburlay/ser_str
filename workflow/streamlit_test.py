@@ -9,8 +9,6 @@ def get_file_content_as_string(path):
 
 st.sidebar.title("Control Panel")
 
-st.sidebar.title("Control Panel")
-
 with st.sidebar:
     add_selectbox = st.selectbox("App-Mode", ["Application start","Show the source code"])
     add_radio = st.radio(
@@ -98,7 +96,6 @@ if add_selectbox  == "Application start" and add_radio == "Pytorch (ResNet34)":
 
 
 
-elif add_selectbox == "Show the source code" and  add_radio == "Pytorch (ResNet34)":
+elif add_selectbox == "Show the source code" :
     readme_text = st.markdown(get_file_content_as_string("streamlit.md"))
-else:
-    st.title("Keras (ResNet34) is not jet included")
+
