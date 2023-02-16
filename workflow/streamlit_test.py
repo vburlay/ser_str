@@ -2,21 +2,15 @@ import streamlit as st
 import urllib3
 from streamlit_imagegrid import streamlit_imagegrid
 import requests
-def get_file_content_as_string(path):
-    url = 'https://raw.githubusercontent.com/vburlay/ser_str/master/workflow/' + path
-    response = urllib3.request.urlopen(url)
-    return response.read().decode("utf-8")
 
 st.sidebar.title("Control Panel")
 
 with st.sidebar:
     add_selectbox = st.selectbox("App-Mode", ["Application start","Show the source code"])
-    add_radio = st.radio(
-        "Choose a model",
-        ("Pytorch (ResNet34)", "Keras (ResNet34)")   )
+    add_radio = st.radio("Choose a model","Pytorch (ResNet34)" )
 
 
-if add_selectbox  == "Application start" and add_radio == "Pytorch (ResNet34)":
+if add_selectbox  == "Application start":
 
     st.title("Speach emotion recognition")
     if  st.checkbox("Show raw data"):
@@ -97,5 +91,6 @@ if add_selectbox  == "Application start" and add_radio == "Pytorch (ResNet34)":
 
 
 elif add_selectbox == "Show the source code" :
-    readme_text = st.markdown(get_file_content_as_string("streamlit.md"))
-
+    url = 'https://raw.githubusercontent.com/vburlay/ser_str/master/workflow/streamlit.md'
+    response = urllib3.request.urlopen(url)
+    readme_text = st.markdown(response.read().decode("utf-8"))
