@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5c34dbe8-f776-46d7-aa0d-936371a55ead" name="Changes" comment="files">
+      <change afterPath="$PROJECT_DIR$/streamlit requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/streamlit_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/workflow/streamlit_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-05-01-02-02-02.wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-05-01-02-02-03.wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-05-02-01-01-01.wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-05-02-01-01-02.wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-05-02-01-01-03.wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-05-02-01-02-01.wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-05-02-01-02-02.wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-05-02-01-02-03.wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-05-02-02-01-01.wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-05-02-02-01-02.wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-05-02-02-01-03.wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-05-02-02-02-01.wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-05-02-02-02-02.wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-05-02-02-02-03.wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-06-01-01-01-01.wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-06-01-01-01-02.wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-06-01-01-01-03.wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-06-01-01-02-01.wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-06-01-01-02-02.wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-06-01-01-02-03.wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-06-01-02-01-01.wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-06-01-02-01-02.wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-06-01-02-01-03.wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-06-01-02-02-01.wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-06-01-02-02-02.wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-06-01-02-02-03.wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-06-02-01-01-01.wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow/www/audio/03-01-06-02-01-01-02.wav.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="R Script" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Lgq7kxqzu7dPh5M6sGn2s4Xuwf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Burlay/PycharmProjects/ser_str&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Burlay\PycharmProjects\ser_str\workflow" />
+      <recent name="C:\Users\Burlay\PycharmProjects\ser_str\workflow\www" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Burlay\PycharmProjects\ser_str\workflow" />
+      <recent name="C:\Users\Burlay\PycharmProjects\ser_str\code" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="skript_audio_class_keras" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="ser_str" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/workflow" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/workflow/skript_audio_class_keras.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5c34dbe8-f776-46d7-aa0d-936371a55ead" name="Changes" comment="" />
+      <created>1676302907176</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676302907176</updated>
+    </task>
+    <task id="LOCAL-00001" summary="files">
+      <created>1676309472805</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676309472805</updated>
+    </task>
+    <task id="LOCAL-00002" summary="files">
+      <created>1676316443298</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676316443298</updated>
+    </task>
+    <task id="LOCAL-00003" summary="files">
+      <created>1676325525941</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676325525941</updated>
+    </task>
+    <task id="LOCAL-00004" summary="files">
+      <created>1676375413424</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676375413424</updated>
+    </task>
+    <task id="LOCAL-00005" summary="files">
+      <created>1676376254373</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676376254373</updated>
+    </task>
+    <task id="LOCAL-00006" summary="files">
+      <created>1676376319265</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676376319265</updated>
+    </task>
+    <task id="LOCAL-00007" summary="files">
+      <created>1676376411519</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676376411519</updated>
+    </task>
+    <task id="LOCAL-00008" summary="files">
+      <created>1676376479156</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676376479156</updated>
+    </task>
+    <task id="LOCAL-00009" summary="files">
+      <created>1676398697617</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676398697617</updated>
+    </task>
+    <task id="LOCAL-00010" summary="files">
+      <created>1676415330010</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1676415330010</updated>
+    </task>
+    <task id="LOCAL-00011" summary="files">
+      <created>1676462332991</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1676462332991</updated>
+    </task>
+    <task id="LOCAL-00012" summary="files">
+      <created>1676462571088</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1676462571088</updated>
+    </task>
+    <task id="LOCAL-00013" summary="files">
+      <created>1676465750624</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1676465750624</updated>
+    </task>
+    <task id="LOCAL-00014" summary="files">
+      <created>1676466275961</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1676466275961</updated>
+    </task>
+    <task id="LOCAL-00015" summary="files">
+      <created>1676466403628</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1676466403628</updated>
+    </task>
+    <task id="LOCAL-00016" summary="files">
+      <created>1676466673659</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1676466673659</updated>
+    </task>
+    <task id="LOCAL-00017" summary="files">
+      <created>1676466716298</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1676466716298</updated>
+    </task>
+    <task id="LOCAL-00018" summary="files">
+      <created>1676555403815</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1676555403815</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="files" />
+    <option name="LAST_COMMIT_MESSAGE" value="files" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
