@@ -8,8 +8,8 @@ st.sidebar.title("Control Panel")
 with st.sidebar:
     add_selectbox = st.selectbox("App-Mode", ["Application start","Show the source code"])
     add_radio = st.radio(
-        "Choose a model",
-        ("Pytorch (ResNet34)"))
+        "Model 👇",
+        ["Pytorch (ResNet34)"])
 
 
 if add_selectbox  == "Application start":
