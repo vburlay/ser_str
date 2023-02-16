@@ -4,21 +4,13 @@ Created on Sat Feb 03 21:41:46 2023
 @author: Vladimir
 """
 import os
-import numpy as np
-import matplotlib.pyplot as plt
 import pandas as pd
 import tensorflow as tf
 import torch
-import json
-from torch import nn
-from torch import optim
 import numpy as np
-from PIL import Image
-from torchvision import datasets, transforms, models
-from collections import OrderedDict
-from os import walk
+from torchvision import datasets, transforms
 from pathlib import Path
-from torch.utils.data import Dataset, DataLoader
+from torch.utils.data import Dataset
 import shutil
 
 

@@ -1,5 +1,5 @@
 """
-Created on Sat Feb 03 23:41:46 2023
+Created on Sat Feb 03 23:51:49 2023
 
 @author: Vladimir
 """
@@ -9,7 +9,7 @@ import skript_audio_class
 import plotly.express as px
 from streamlit_imagegrid import streamlit_imagegrid
 import requests
-import  urllib
+import urllib
 
 def get_file_content_as_string(path):
     url = 'https://raw.githubusercontent.com/vburlay/ser_str/master/workflow/' + path
