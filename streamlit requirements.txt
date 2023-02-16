@@ -1,0 +1,11 @@
+streamlit==1.1.*
+pandas
+plotly.express
+streamlit_imagegrid
+requests
+urllib
+tensorflow
+torch
+numpy
+torchvision
+pathlib

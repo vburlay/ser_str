@@ -28,7 +28,7 @@ with st.sidebar:
 
 
 if add_selectbox  == "Application start" and add_radio == "Pytorch (ResNet34)":
-    data = pd.DataFrame(data=skript_audio_class.check_wav("www/audio"))
+    data = pd.DataFrame(data=skript_audio_class.check_wav("www/audio_pth"))
     st.title("Speach emotion recognition")
     if  st.checkbox("Show raw data"):
 
