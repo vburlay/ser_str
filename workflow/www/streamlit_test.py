@@ -1,10 +1,10 @@
 import streamlit as st
-import urllib
+import urllib3
 from streamlit_imagegrid import streamlit_imagegrid
 import requests
 def get_file_content_as_string(path):
     url = 'https://raw.githubusercontent.com/vburlay/ser_str/master/workflow/' + path
-    response = urllib.request.urlopen(url)
+    response = urllib3.request.urlopen(url)
     return response.read().decode("utf-8")
 
 st.sidebar.title("Control Panel")
