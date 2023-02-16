@@ -93,6 +93,6 @@ if add_selectbox  == "Application start":
 
 
 elif add_selectbox == "Show the source code" :
-    url = 'https://raw.githubusercontent.com/vburlay/ser_str/master/workflow/streamlit.md'
-    response = urllib3.request.urlopen(url)
-    readme_text = st.markdown(response.read().decode("utf-8"))
+    http = urllib3.PoolManager()
+    response = http.request('GET','https://raw.githubusercontent.com/vburlay/ser_str/master/workflow/streamlit.md')
+    readme_text = st.markdown(response.data.decode("utf-8"))
