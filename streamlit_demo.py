@@ -4,6 +4,7 @@ from streamlit_imagegrid import streamlit_imagegrid
 import requests
 from pathlib import Path
 import torch
+from torchvision import transforms
 
 st.sidebar.title("Control Panel")
 class_names = ['neutral', 'happy', 'sad', 'angry', 'fear', 'surprise']
@@ -16,9 +17,15 @@ percentages_4 = []
 percentages_5 = []
 
 # load model
-model = torch.load("https://raw.githubusercontent.com/vburlay/ser_str/master/workflow/models/audio_model.pth")["state_dict"]
+#model = torch.load("https://raw.githubusercontent.com/vburlay/ser_str/master/workflow/models/audio_model.pth")
 
+image_transformed = transforms.Compose([transforms.Resize(255),
+                                        transforms.CenterCrop(224),
+                                        transforms.ToTensor(),
+                                        transforms.Normalize([0.485, 0.456, 0.406],
+                                                             [0.229, 0.224, 0.225])])
 
+#images = datasets.ImageFolder(Path.cwd()/ 'temp' / 'workflow' / 'www' / 'audio_pth', transform=image_transformed)
 
 with st.sidebar:
     add_selectbox = st.selectbox("App-Mode", ["Application start","Show the source code"])
