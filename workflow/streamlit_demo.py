@@ -93,7 +93,7 @@ if add_selectbox  == "Application start":
         tab1, tab2, tab3 = st.tabs(["Countplot of the results", "Result Tabular","Individual results"])
         with tab1:
             st.title(Path.cwd()/ 'temp' / 'workflow' / 'www' / 'audio_pth')
-            os.makedirs(Path.cwd()/ 'temp' / 'workflow' / 'www' / 'audio_pth')
+            os.makedirs(Path.cwd()/ 'temp' / 'workflow' / 'www' / 'audio_pth' /'temp')
 
 elif add_selectbox == "Show the source code" :
     http = urllib3.PoolManager()
