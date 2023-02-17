@@ -24,7 +24,7 @@
 ## Technologies Used
 - Python - version 3.8.0
 - Jupyter notebook - version 1.0
-- Streamlit
+- Streamlit - version 1.18.0
 
 
 ## Features
