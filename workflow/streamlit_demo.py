@@ -2,6 +2,8 @@ import streamlit as st
 import urllib3
 from streamlit_imagegrid import streamlit_imagegrid
 import requests
+from pathlib import Path
+
 
 st.sidebar.title("Control Panel")
 
@@ -89,7 +91,8 @@ if add_selectbox  == "Application start":
             st.sidebar.markdown('<img src={} width=240px></img>'.format(return_value), unsafe_allow_html=True)
     else:
         tab1, tab2, tab3 = st.tabs(["Countplot of the results", "Result Tabular","Individual results"])
-
+        with tab1:
+            st.title(Path.cwd())
 
 
 elif add_selectbox == "Show the source code" :

@@ -2,4 +2,5 @@ streamlit==1.18.0
 urllib3==1.26.4
 streamlit_imagegrid
 requests==2.25.1
+pathlib==1.0.1
 
