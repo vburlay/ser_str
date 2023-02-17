@@ -2,8 +2,10 @@ import streamlit as st
 import urllib3
 from streamlit_imagegrid import streamlit_imagegrid
 import requests
+import pandas as pd
 
-r = requests.get()
+url = 'https://raw.githubusercontent.com/vburlay/ser_str/master/workflow/models/model_results.csv'
+data = pd.read_csv(url, index_col=0)
 with st.sidebar:
     add_selectbox = st.selectbox("App-Mode", ["Application start","Show the source code"])
     add_radio = st.radio(
