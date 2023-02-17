@@ -3,7 +3,7 @@
 ![image1](https://github.com/vburlay/ser_str/raw/master/image/ser.PNG) 
 
 > Emotion recognition from audio data using Deep Learning (Keras and Pytorch - ResNet34).
-> Live demo [_here_](https://vburlay-ser-str-streamlit-demo-28yxvn.streamlit.app/).
+> Live demo [_here_](https://vburlay-ser-str-workflowstreamlit-demo-h12kh6.streamlit.app/).
 ## Table of Contents
 * [Genelal Info](#general-nformation)
 * [Technologies Used](#technologies-used)
