@@ -3,6 +3,7 @@ urllib3==1.26.4
 streamlit_imagegrid
 requests==2.25.1
 pandas
+plotly
 
 
 
