@@ -73,7 +73,6 @@ def check_wav(path):
             'happy': percentages_1, 'sad': percentages_2, 'angry': percentages_3,
             'fear': percentages_4, 'surprise': percentages_5}
     df_results = pd.DataFrame(data=data)
-
     return df_results
 
 
