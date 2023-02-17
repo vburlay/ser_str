@@ -5,8 +5,10 @@ import requests
 import pandas as pd
 import plotly.express as px
 url = 'https://raw.githubusercontent.com/vburlay/ser_str/master/date/model_result.csv'
+data = pd.read_csv(url)
 
-data = pd.read_csv(url, index_col=0)
+
+
 with st.sidebar:
     add_selectbox = st.selectbox("App-Mode", ["Application start","Show the source code"])
     add_radio = st.radio(
@@ -94,14 +96,6 @@ if add_selectbox  == "Application start":
         with tab1:
             fig = px.bar(data['classification'],width=1000,height=500)
             st.plotly_chart(fig)
-        with tab2:
-                fig = px.scatter(
-                    data.drop(columns=['file']), width=1000, height=650
-                )
-                st.plotly_chart(fig)
-        with tab3:
-            fig = px.bar(data)
-            st.dataframe(data,width=1200,height=600)
 
 
 
