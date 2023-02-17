@@ -6,7 +6,12 @@ import pandas as pd
 import plotly.express as px
 url = 'https://raw.githubusercontent.com/vburlay/ser_str/master/date/model_result.csv'
 data = pd.read_csv(url)
-
+pd.to_numeric(data['neutral'])
+pd.to_numeric(data['happy'])
+pd.to_numeric(data['sad'])
+pd.to_numeric(data['angry'])
+pd.to_numeric(data['fear'])
+pd.to_numeric(data['surprise'])
 
 
 with st.sidebar:
@@ -96,9 +101,11 @@ if add_selectbox  == "Application start":
         with tab1:
             fig = px.bar(data['classification'],width=1000,height=500)
             st.plotly_chart(fig)
-
-
-
+        with tab2:
+                fig = px.scatter(data.drop(columns=['file','classification']), width=1000, height=650)
+                st.plotly_chart(fig)
+        with tab3:
+            st.dataframe(data,width=1200,height=600)
 
 elif add_selectbox == "Show the source code" :
     http = urllib3.PoolManager()

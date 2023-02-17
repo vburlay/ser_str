@@ -113,7 +113,6 @@ if add_selectbox  == "Application start" and add_radio == "Pytorch (ResNet34)":
                 )
                 st.plotly_chart(fig)
         with tab3:
-            fig = px.bar(data)
             st.dataframe(data,width=1200,height=600)
 
 
