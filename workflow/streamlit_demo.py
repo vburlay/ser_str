@@ -3,9 +3,27 @@ import urllib3
 from streamlit_imagegrid import streamlit_imagegrid
 import requests
 from pathlib import Path
-import os
+from torchvision import  transforms
+import torch
 
 st.sidebar.title("Control Panel")
+class_names = ['neutral', 'happy', 'sad', 'angry', 'fear', 'surprise']
+classification = []
+percentages_0 = []
+percentages_1 = []
+percentages_2 = []
+percentages_3 = []
+percentages_4 = []
+percentages_5 = []
+
+# load model
+model = torch.load('models/audio_model.pth')
+
+image_transformed = transforms.Compose([transforms.Resize(255),
+                                            transforms.CenterCrop(224),
+                                            transforms.ToTensor(),
+                                            transforms.Normalize([0.485, 0.456, 0.406],
+                                                                 [0.229, 0.224, 0.225])])
 
 with st.sidebar:
     add_selectbox = st.selectbox("App-Mode", ["Application start","Show the source code"])
@@ -93,7 +111,7 @@ if add_selectbox  == "Application start":
         tab1, tab2, tab3 = st.tabs(["Countplot of the results", "Result Tabular","Individual results"])
         with tab1:
             st.title(Path.cwd()/ 'temp' / 'workflow' / 'www' / 'audio_pth')
-            os.makedirs(Path.cwd()/ 'temp' / 'workflow' / 'www' / 'audio_pth' /'temp')
+
 
 elif add_selectbox == "Show the source code" :
     http = urllib3.PoolManager()
