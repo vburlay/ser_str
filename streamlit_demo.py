@@ -16,8 +16,8 @@ percentages_4 = []
 percentages_5 = []
 
 # load model
-# model = torch.load('https://raw.githubusercontent.com/vburlay/ser_str/master/workflow/models/audio_model.pth')
-model = torch.load(Path.cwd()/ 'temp' / 'workflow' / 'models' /'audio_model.pth')
+model = torch.load("https://raw.githubusercontent.com/vburlay/ser_str/master/workflow/models/audio_model.pth")
+
 
 
 with st.sidebar:
