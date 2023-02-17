@@ -28,7 +28,7 @@
 
 
 ## Features
-- Deep Learning (Pytorch & Keras - ResNet34)
+- Deep Learning(Pytorch & Keras - ResNet34)
 - Librosa(.wav -> .png)
 
 ## Screenshots
