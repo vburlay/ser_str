@@ -2,6 +2,8 @@
  
 ![image1](https://github.com/vburlay/ser_str/raw/master/image/ser.PNG) 
 
+> Emotion recognition from audio data using Deep Learning (Keras and Pytorch - ResNet34).
+> Live demo [_here_](https://vburlay-ser-str-streamlit-demo-28yxvn.streamlit.app/).
 ## Table of Contents
 * [Genelal Info](#general-nformation)
 * [Technologies Used](#technologies-used)
@@ -16,11 +18,13 @@
 
 ## General Information
 
-Speach emotion recognition
+> This project has two main objectives. One was to understand how to effectively speach emotion recognition based on deep learning, and the other was to determine a best approach to speach emotion recognition using deep learning. 
+ > Data set: "Allstate Claim Prediction Challenge" comes from Kaggle [_here_](https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-speech-audio).
 
 ## Technologies Used
 - Python - version 3.8.0
 - Jupyter notebook - version 1.0
+- Streamlit
 
 
 ## Features
@@ -102,9 +106,8 @@ Project is: _complete_
 
 ## Room for Improvement
 
-- The data implemented in the analysis has a relatively small volume. This should be improved by the new measurements of the characteristics.
-- It is also conceivable that the further number of new customer groups will be included in the analysis. In this way, the new characteristics of customers can make the results more meaningful.
-
+Training the models for the audio data posed various challenges. The customer neural network (Keras-Resnet34), which was initially created , achieved a relatively low and therefore unsatisfactory level of accuracy. By using transfer learning, an increase in accuracy could be achieved on the basis of the PyTorch-ResNet34, but the accuracy of the validation data set was still not satisfactory and the model had a strong tendency to overfitting. This phenomenon could be reduced by using image augmentation, but not yet eliminated.
+Training the model for the audio data had to be done using Google Collab due to the heavy computational overhead, as a commercially available computer was no longer sufficient.
 
 
 ## Contact
