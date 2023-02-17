@@ -3,7 +3,6 @@ import urllib3
 from streamlit_imagegrid import streamlit_imagegrid
 import requests
 from pathlib import Path
-from torchvision import  transforms
 import torch
 
 st.sidebar.title("Control Panel")
@@ -19,11 +18,7 @@ percentages_5 = []
 # load model
 model = torch.load('models/audio_model.pth')
 
-image_transformed = transforms.Compose([transforms.Resize(255),
-                                            transforms.CenterCrop(224),
-                                            transforms.ToTensor(),
-                                            transforms.Normalize([0.485, 0.456, 0.406],
-                                                                 [0.229, 0.224, 0.225])])
+
 
 with st.sidebar:
     add_selectbox = st.selectbox("App-Mode", ["Application start","Show the source code"])
